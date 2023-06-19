@@ -116,6 +116,24 @@ footer a {
 	
 }
 
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	margin: 0;
+  }
+  
+  .video-container {
+	max-width: 800px; /* Adjust the maximum width as needed */
+  }
+  
+  video {
+	width: 100%;
+	height: auto;
+  }
+  
+
 .footer_social-wrapper {
     grid-column-gap: .75rem;
     grid-row-gap: .75rem;
