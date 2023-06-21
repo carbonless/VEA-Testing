@@ -83,7 +83,7 @@ h2 + p{
 	
 }
 
-#stream {
+#storyboard {
 	background: url('img/Farmland.jpg') top left no-repeat;
 	background-size: cover;
 	color: white;
@@ -123,15 +123,49 @@ body {
 	height: 100vh;
 	margin: 0;
   }
+
+  .vertical-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+  }
+  
   
   .video-container {
-	max-width: 800px; /* Adjust the maximum width as needed */
+	max-width: 400px; /* Adjust the maximum width as needed */
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: auto;
   }
   
   video {
-	width: 100%;
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	height: auto;
   }
+  
+  .video-wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+  }
+
+  <style>
+.row {
+  display: flex;
+}
+
+.column {
+  float: right;
+  width: 33.33%;
+}
+</style>
   
 
 .footer_social-wrapper {
