@@ -5,7 +5,7 @@ html, body, .cover {
 }
 
 .cover {
-	background: url('img/couchfriends.jpg') top left no-repeat;
+	background: url('img/mountain.jpg') top left no-repeat;
 	background-size: cover;
 	display: table;
 	width: 100%;
@@ -16,14 +16,14 @@ html, body, .cover {
 
 .cover-text {
 	text-align: center;
-	color:white;
+	color:black;
 	display: table-cell;
 	vertical-align: middle;
 }
 
 .cover-text h1 {
 	font-size: 60px;
-	color:burlywood;
+	color:black;
 	margin: 0;
 	letter-spacing: -4px;
 }
