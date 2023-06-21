@@ -84,9 +84,9 @@ h2 + p{
 }
 
 #partners {
-	background: url('img/fan.jpg') top left no-repeat;
+	background: url('img/mountain.jpg') top left no-repeat;
 	background-size: cover;
-	color: white;
+	color: black;
 	text-align: center;
 	
 }
