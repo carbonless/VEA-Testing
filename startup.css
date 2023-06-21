@@ -74,11 +74,29 @@ h2 + p{
 	margin-top: -50px;
 }
 
+h4{
+	text-align: center;
+	font-size: 28px;
+	font-weight: bold;
+	margin: 0 0 60px;
+	color:black
+	
+}
+
 
 #team {
 	background: url('img/fan.jpg') top left no-repeat;
 	background-size: cover;
 	color: white;
+	text-align: center;
+	
+}
+
+
+#storyboard {
+	background: url('img/Farmland.jpg') top left no-repeat;
+	background-size: cover;
+	color: black;
 	text-align: center;
 	
 }
