@@ -109,6 +109,27 @@ h3{
 	
 }
 
+
+        .video-container {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .video-container .video-wrapper {
+            flex-basis: 49%;
+            padding-top: 27.5%; /* this is for a 16:9 aspect ratio */
+            position: relative;
+        }
+        
+        .video-container video, .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+  
+
 footer{
 	background: #222;
 	color:beige;
@@ -123,15 +144,21 @@ footer a {
 
 /*------- Media Queries -------*/
 
-@media only screen and (max-width : 568px)
-{
+@media only screen and (max-width: 568px) {
 	.cover h1 {
-		fontsize: 40px; 
+	  font-size: 40px;
 	}
 	section {
-		padding: 20px;
-	
-}
+	  padding: 20px;
+	}
+  }
+  
+  @media (max-width: 767px) {
+	body {
+	  margin-right: 0 !important;
+	}
+  }
+  
 
 
 
