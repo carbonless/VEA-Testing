@@ -104,9 +104,9 @@
                     </div>
                     
                     <div class="col-sm-3">
-                        <img src="img/Rigel.png" alt="Rigel's face" class="img-circle">
-                        <h4>Rigel Turner</h4>
-                        <p>Regulatory Affairs</p>   
+                        <img src="img/Marko.jpg" alt="Marko's face" class="img-circle">
+                        <h4>Marko Bjelonic, PhD</h4>
+                        <p>Founder Swiss Mile</p>   
                     </div>
 
 					<div class="col-sm-3">
@@ -116,9 +116,9 @@
                     </div>
                     
                     <div class="col-sm-3">
-                        <img src="img/Sophia.jpg" alt="Sophia's face" class="img-circle">
-                        <h4>Sophia</h4>
-                        <p>Transportation/Advisor</p>    
+                        <img src="img/Ollie.jpg" alt="Man's face" class="img-circle">
+                        <h4>Ollie Galam</h4>
+                        <p>Business Development/Advisor</p>    
                     </div>
                     
                
@@ -135,7 +135,7 @@
                    
                     <div class="col-sm-3">
                         <img src="img/Sakshi.jpg" alt="Man's face" class="img-circle">
-                        <h4>Sakshi Sinha</h4>
+                        <h4>Sakshi Singh</h4>
                         <p>Data Scientist/Analyst</p>    
                     </div>
 
@@ -246,7 +246,7 @@
           </section>
 
  	<section id="podcast">
-            <h2>Media and Press</h2>
+            <h2>Podcasts</h2>
             <div class="container">
 				
                 	<div class="video-container">
@@ -254,12 +254,6 @@
                         	<iframe src="https://www.npr.org/player/embed/1162957409/1162957410" width="100%" height="290" frameborder="0" scrolling="no" title="NPR embedded audio player"></iframe>
                     	<h3>Professor Joe Hupy on NPR</h3>
 						</div>
-                	
-
-					
-                    	<div class="video-wrapper">
-                        	<iframe src="https://www.kyivpost.com/post/19056" title="Kyiv Post"></iframe>
-                    	</div>
                 	</div>
 				
               </div>
@@ -285,7 +279,7 @@
 
 					                     
 					<div class="col-sm-3">
-					  <a href="https://www.furtherllc.com"><img src="img/FES.jpg" ></a>
+					  <a href="https://www.swiss-mile.com"><img src="img/Swiss Mile.png" ></a>
 					  <h4></h4>
                         <p></p>     
                     </div>
@@ -296,11 +290,6 @@
 						<h4></h4>
                         <p></p>  
                     </div>
-
-				</div>
-			</div>
-			<div class="container">
-				<div class="row">
 
 					<div class="col-sm-3">
 						<a href="https://www.menet.aero"><img src="img/Menet Aero.png" ></a>
@@ -313,14 +302,6 @@
 						<h4></h4>
                         <p></p>  
                     </div>
-
-					<div class="col-sm-3">
-						<a href="https://www.asymmetric.com/"><img src="img/asymm.png" ></a>
-						<h4></h4>
-                        <p></p>  
-                    </div>
-
-					
                     
                 </div>
               
@@ -329,64 +310,50 @@
 	  
 		  <section id="signup">
 			<div class="container">
-			  <h2>Contact Us</h2>
+			   <h2>Contact Us</h2>
 			  <p class="lead">Please submit your email and we will get right back to you</p>
 			  <div class="row">
-				<div class="col-sm-8 col-sm-offset-2">
-				  <form id="emailForm">
-					<div class="input-group">
-					  <input type="email" id="emailInput" class="form-control input-lg" placeholder="Your email address..." required>
-					  <span class="input-group-btn">
-						<button class="btn btn-warning btn-lg" type="submit">Send</button>
-					  </span>
-					</div>
-				  </form>
-				</div>
+				  <div class="col-sm-8 col-sm-offset-2">
+					  <form>
+						  <div class="input-group">
+							  <input type="text" class="form-control input-lg" placeholder="Your email address...">
+						  <span class="input-group-btn">
+							  <button class="btn btn-warning btn-lg" type="button">Send</button>
+							  </span> 
+						  </div>
+					  </form>
+				  </div>
 			  </div>
-			</div>
-		  </section>
-		  
-		  <script>
-			document.getElementById('emailForm').addEventListener('submit', async function(event) {
-			  event.preventDefault(); // Prevent the form from submitting the default way
-			  const email = document.getElementById('emailInput').value;
-		  
-			  // Format the data as {"body": "{\"email\":\"test@example.com\"}"}
-			  const formattedData = {
-				body: JSON.stringify({ email: email })
-			  };
-		  
-			  try {
-				const response = await fetch('https://u3wj5g0z43.execute-api.us-east-1.amazonaws.com/prod/email', {
-				  method: 'POST',
-				  body: JSON.stringify(formattedData),
-				  headers: {
-					'Content-Type': 'application/json'
-				  }
-				});
-		  
-				if (response.ok) {
-				  const result = await response.json();
-				  alert('Email submitted successfully!');
-				} else {
-				  alert('Failed to submit email.');
-				}
-			  } catch (error) {
-				console.error('Error:', error);
-				alert('Failed to submit email.');
-			  }
-			});
-		  </script>   
+		  </div>
+		</section>    
 		  
 	  
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="bootstrap/js/bootstrap.min.js"></script>
-
-	<footer>
-		<p>&copy; 2024 VEA Systems</p>
-	  </footer>
+		<script>
+			var vapiInstance = null;
+			const assistant = "<assistant_id>"; // Substitute with your assistant ID
+			const apiKey = "<your_public_api_key>"; // Substitute with your Public key from Vapi Dashboard.
+			const buttonConfig = {}; // Modify this as required
+		  
+			(function (d, t) {
+			  var g = document.createElement(t),
+				s = d.getElementsByTagName(t)[0];
+			  g.src =
+				"https://cdn.jsdelivr.net/gh/VapiAI/html-script-tag@latest/dist/assets/index.js";
+			  g.defer = true;
+			  g.async = true;
+			  s.parentNode.insertBefore(g, s);
+		  
+			  g.onload = function () {
+				vapiInstance = window.vapiSDK.run({
+				  apiKey: apiKey, // mandatory
+				  assistant: assistant, // mandatory
+				  config: buttonConfig, // optional
+				});
+			  };
+			})(document, "script");
+		  
+		  </script>
+		  
 
    </body>
 </html>
